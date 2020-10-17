@@ -1,1 +1,16 @@
 # Accident-Risk-prediction
+<b><h2>Introduction</h2></b>
+Every day around the world, a large percentage of people die from traffic accident injuries. An effective approach for reducing traffic fatalities is: first building automatic traffic accident detection systems, second, reducing the time between when an accident occurs and when first emergency responders are dispatched to the scene of the accident. Recent approaches are using built-in vehicle automatic accident detection and notification systems. While these approaches work fine, they are expensive, maintenance is a complex task, and are not available in all cars. On the other hand, the ability to detect traffic accidents using smartphones has only recently become possible because of the advances in the processing power and sensors deployed on smartphones.
+ 
+<b><h2>Objective</h2></b>
+Our objective is to reduce the number of road accidents and their severity by predicting susceptibility of accidents in areas taking into account numerous surrounding factors and alerting the driver to be careful in case of the former being true.
+ 
+
+
+
+<b><h2>Implementation</h2></b>
+According to the idea, a website is implemented that makes use of a location API to detect the current location of the user. A weather API is used to detect various environmental or surrounding factors such as precipitation, visibility, temperature, time and a few other factors. A statistical machine learning model built using python is employed for prediction of chances and severity of an accident using the parameters obtained by the weather API as input in the current location, based on which an alert is issued to the user if the area is found to be susceptible for accidents at that moment through which the user is more careful while driving thus reducing the chances of an accident.
+ 
+<b><h2>Application</h2></b>
+Helps drivers stay alert in accident prone spaces and during accident prone times thus reducing the fatalities/severity of the accident/s and ensuring their safety.
+
