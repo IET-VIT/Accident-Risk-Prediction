@@ -38,6 +38,8 @@ def corr(df):
     sns.heatmap(corr)
 corr(df)
 
+# final
+
 df_tem = df
 df_tem.isnull().sum()
 
