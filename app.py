@@ -3,7 +3,9 @@
 Created on Tue Oct 20 20:27:40 2020
 
 @author: Rahul
+
 """
+# xnn
 
 
 
@@ -14,7 +16,7 @@ import streamlit as st
 
 from PIL import Image
 
-pickle_in = open("accident1.pkl","rb")
+pickle_in = open("accident.pkl","rb")
 classifier=pickle.load(pickle_in)
 
 def welcome():
@@ -84,9 +86,9 @@ def main():
         html_temp="""
         
         <ul>
-        <li>Servity < 1 - <em>Less Dangerous</em></li>
-        <li>Servity   1 - 2 <em>Caution Drive Safe<em></li>
-        <li>Servity   2- 3  <em> Dont Travel </em> </li>
+        <li>Severity < 1 - <em>Less Dangerous</em></li>
+        <li>Severity   1 - 2.5 <em>Caution Drive Safe<em></li>
+        <li>Severity >  2.5  <em> Dont Travel </em> </li>
         </ul>
         </div>
         
@@ -98,7 +100,7 @@ def main():
     
         st.text("Developed By Rahul")
         st.text("Team Fourth Dimension")
-        st.text("Future Update will make it realtime by using geolocation and weather api")
+        st.text("Future Update will make it realtime")
         
 if __name__=='__main__':
     main()

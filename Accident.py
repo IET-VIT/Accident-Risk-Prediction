@@ -90,7 +90,7 @@ from sklearn import metrics
 X_train, X_test, y_train, y_test = train_test_split(X, Y , test_size=0.2, random_state=120)
 
 from sklearn.ensemble import RandomForestRegressor
-regressor= RandomForestRegressor(n_estimators = 200,random_state=0)
+regressor= RandomForestRegressor(n_estimators = 20,random_state=0)
 regressor.fit(X_train,y_train)
 
 y_pred=regressor.predict(X_test)
@@ -100,7 +100,7 @@ print("Accuracy:",metrics.accuracy_score(y_test, y_pred.round()))
 
 
 import pickle
-pickle_out = open("accident1.pkl","wb")
+pickle_out = open("accident.pkl","wb")
 pickle.dump(regressor, pickle_out)
 pickle_out.close()
 
